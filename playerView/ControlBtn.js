@@ -11,9 +11,9 @@ import {
   ActivityIndicator,
   StatusBar,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Slider from 'react-native-slider';
-import PropTypes from 'prop-types';
+// import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+// import Slider from 'react-native-slider';
+// import PropTypes from 'prop-types';
 import TimeLimt from './TimeLimit';
 
 export default class ControlBtn extends Component {
@@ -88,7 +88,7 @@ export default class ControlBtn extends Component {
                         onReplayPress && onReplayPress();
                       }}
                       style={{ width: 50, alignItems: 'center', justifyContent: 'center' }}>
-                      <Icon name={'replay'} size={30} color="#fff" />
+                      {/* <Icon name={'replay'} size={30} color="#fff" /> */}
                     </TouchableOpacity>
                   ) : <View style={{ width: 50 }} />
                 }

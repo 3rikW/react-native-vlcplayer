@@ -18,7 +18,7 @@ import VLCPlayer from '../VLCPlayer';
 import PropTypes from 'prop-types';
 import TimeLimt from './TimeLimit';
 import ControlBtn from './ControlBtn';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+// import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { getStatusBarHeight } from './SizeController';
 const statusBarHeight = getStatusBarHeight();
 let deviceHeight = Dimensions.get('window').height;
@@ -185,7 +185,7 @@ export default class VLCPlayerView extends Component {
                 justifyContent: 'center',
                 marginTop: 10,
               }}>
-              <Icon name={'reload'} size={45} color="#fff" />
+              {/* <Icon name={'reload'} size={45} color="#fff" /> */}
             </TouchableOpacity>
           </View>
         )}
@@ -202,7 +202,7 @@ export default class VLCPlayerView extends Component {
                 }}
                 style={styles.btn}
                 activeOpacity={0.8}>
-                <Icon name={'chevron-left'} size={30} color="#fff" />
+                {/* <Icon name={'chevron-left'} size={30} color="#fff" /> */}
               </TouchableOpacity>
             )}
             <View style={{ justifyContent: 'center', flex: 1, marginRight: 10 }}>
