@@ -107,6 +107,9 @@ static NSString *const playbackRate = @"rate";
     //设置缓存多少毫秒
     // [mediaDictonary setObject:@"0" forKey:@"network-caching"];
     [mediaDictonary setObject:@"1" forKey:@"rtsp-tcp"];
+    [mediaDictonary setObject:@"800" forKey:@"network-caching"];
+    [mediaDictonary setObject:@"0" forKey:@"clock-jitter"];
+    [mediaDictonary setObject:@"0" forKey:@"clock-synchro"];
     VLCMedia *media = [VLCMedia mediaWithURL:_uri];
     [media addOptions:mediaDictonary];
     _player.media = media;
@@ -143,6 +146,9 @@ static NSString *const playbackRate = @"rate";
     //设置缓存多少毫秒
     // [mediaDictonary setObject:@"0" forKey:@"network-caching"];
     [mediaDictonary setObject:@"1" forKey:@"rtsp-tcp"];
+    [mediaDictonary setObject:@"800" forKey:@"network-caching"];
+    [mediaDictonary setObject:@"0" forKey:@"clock-jitter"];
+    [mediaDictonary setObject:@"0" forKey:@"clock-synchro"];
     VLCMedia *media = [VLCMedia mediaWithURL:_uri];
     [media addOptions:mediaDictonary];
     _player.media = media;
